@@ -8,11 +8,12 @@
 #include <SimpleFOC.h>
 
 BLDCMotor motor = BLDCMotor(7);                           //According to the selected motor, modify the number of pole pairs here, the value in BLDCMotor()
-BLDCDriver3PWM driver = BLDCDriver3PWM(18, 19, 21, 22);
+
+BLDCDriver3PWM driver = BLDCDriver3PWM(5, 18, 19, 23);
   
 
 /// Target Variable
-float target_velocity = 15;
+float target_velocity = 10;
 
 void setup() {
   
